@@ -1,0 +1,63 @@
+/* Base styles */
+.descriptionSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.decriptionTitle {
+  color: #0d1724;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  margin: 4px;
+  cursor: default;
+}
+
+.decriptionText {
+  color: #545454;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 15px;
+  width: 60%;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  cursor: default;
+}
+
+.divider {
+  border-bottom: solid 1px #dddddd;
+  width: 100px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Media query for small devices */
+@media screen and (max-width: 767px) {
+  .descriptionSection {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .decriptionTitle {
+    font-size: 30px;
+  }
+
+  .decriptionText {
+    margin: 10px;
+    width: 80%;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .divider {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+}
+

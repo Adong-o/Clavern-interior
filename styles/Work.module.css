@@ -1,0 +1,45 @@
+.jobTitle {
+  color: #0d1724;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  margin: 4px;
+  cursor: default;
+}
+
+.workBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20vw;
+  padding-top: 15px;
+  gap: 50px;
+}
+
+.workJobContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .workJobContainer {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .workJobImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .jobTitle {
+    font-size: 30px;
+  }
+  
+  .jobDescription {
+    font-size: 16px;
+  }
+}

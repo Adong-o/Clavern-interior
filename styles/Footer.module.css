@@ -1,0 +1,126 @@
+.topFooter {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #656565;
+    color: #fff;
+    height: 300px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    height: 70%;
+    padding: 1vw;
+    color: rgb(221, 221, 221);
+}
+
+.divider {
+    border-bottom: solid 1px #777777;
+    width: 100px;
+    margin: 10px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+}
+
+.socialIcon {
+    color: rgb(221, 221, 221);
+    font-size: 40px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.socialIcon:hover {
+    color: rgb(255, 255, 255);
+}
+
+.sectionTitle {
+    cursor: default;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.sectionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 8px;
+    font-weight: 300;
+}
+
+.sectionText > p {
+    margin: 5px;
+}
+
+.bottomFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #545454;
+    height: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  .section {
+    max-width: 30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .topFooter {
+    flex-direction: column;
+    height: auto;
+    padding: 40px;
+    text-align: center;
+  }
+  .section {
+    max-width: 50%;
+    margin: 20px;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .topFooter {
+    padding: 20px;
+  }
+  .section {
+    max-width: 90%;
+  }
+  .socials {
+    height: 40px;
+    width: 80px;
+  }
+  .socialIcon {
+    font-size: 30px;
+    border-radius: 30px;
+  }
+  .sectionTitle {
+    font-size: 1.2rem;
+  }
+  .sectionText {
+    font-size: 0.9rem;
+  }
+  .bottomFooter {
+    font-size: 0.9rem;
+    height: 100px;
+  }
+}
+

@@ -1,0 +1,42 @@
+/* Default styles */
+.zoomBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000060;
+    pointer-events: auto;
+    z-index: 5;
+}
+
+.XIcon {
+    position: absolute;
+    color: rgb(71, 71, 71);
+    font-size: 30px;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 6;
+}
+
+.XIcon:hover {
+    color: rgb(179, 179, 179);
+}
+
+/* Media query for responsive styles */
+@media (max-width: 768px) {
+    .zoomBackground {
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-y: auto;
+    }
+
+    .XIcon {
+        top: 10px;
+        right: 10px;
+    }
+}
